@@ -44,7 +44,7 @@ def calculateGWA(event):
         print("for " + id)
         sum = sum + int(current_input.value)
     
-    average = len(inputIDS)
+    average =  float(sum / len(inputIDS))
     document.querySelector("#gwa_result").innerHTML = average
 
     print(average)
