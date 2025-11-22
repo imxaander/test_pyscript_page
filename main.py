@@ -32,7 +32,7 @@ def calculateGWA(event):
     inputIDS = [
         "#science_grade_input", 
         "#math_grade_input", 
-        "#english_grade_input"
+        "#english_grade_input",
         "#filipino_grade_input",
         "#ict_grade_input",
         "#pe_grade_input"
@@ -41,7 +41,8 @@ def calculateGWA(event):
 
     for id in inputIDS:
         current_input = document.querySelector(id)
-        sum += int(current_input.value)
+        print("for " + id)
+        sum = sum + int(current_input.value)
     
     average = len(inputIDS)
     document.querySelector("#gwa_result").innerHTML = average
