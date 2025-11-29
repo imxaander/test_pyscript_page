@@ -25,10 +25,8 @@ from pyscript import document
 
 
 # with loop hehe
-
-
 def calculateGWA(event):
-
+    x = ("asd", 1, 3)
     inputIDS = [
         "#science_grade_input", 
         "#math_grade_input", 
@@ -48,6 +46,4 @@ def calculateGWA(event):
     document.querySelector("#gwa_result").innerHTML = average
 
     print(average)
-
-
-    
+    print(x)

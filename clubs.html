@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title></title>
+    <style>
+        body {
+            background-color: rgb(162, 208, 219);
+        }
+
+        h1{
+            text-align: center;
+            border-bottom: 10px rgb(86, 144, 189)
+        }
+    </style>
+
+    <style>
+        form {
+            border-radius: 10px;
+            background-color: #74b8cb;
+            padding: 30px;
+        }
+
+        label {display: block;}
+
+        input[type=text], select {
+            width: 100%;
+            padding: 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #a3cade;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=show_club_information] {
+            width: 100%;
+            background-color: #4a7a96;
+            color: white;
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+             text-align: center;
+        }
+
+        input[type=show_club_information]:hover {
+        background-color: #3e7d9c;
+        }
+
+  </style>
+</head>
+<body>
+    <h1>School Club Information</h1>
+    <form>
+        <label for="clubs">Select a club:</label>
+        <select id="clubs" name="clubs">
+            <option value="swimming_club">Swimming Club</option>
+            <option value="baseball_club">Baseball Club</option>
+            <option value="computer_club">Computer Club</option>
+        </select>
+        
+        <input py-click="displayClubInfo" type="show_club_information" value="Show Club Information">
+    </form>
+    <div id="output"></div>
+  
+
+
+    <py-script src="clubs.py"></py-script>
+</body>
+</body>
+</html>
